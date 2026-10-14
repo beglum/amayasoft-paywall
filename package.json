@@ -1,0 +1,28 @@
+{
+  "name": "amayasoft-paywall",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.8.1",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck",
+    "postinstall": "nuxt prepare",
+    "pixel-diff": "node scripts/pixel-diff.mjs"
+  },
+  "dependencies": {
+    "nuxt": "^4.6.1",
+    "postgres": "^3.4.9",
+    "vue": "^3.5.44",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.64.0",
+    "pngjs": "^7.0.0",
+    "typescript": "^5.9.0",
+    "vue-tsc": "^3.3.13"
+  }
+}

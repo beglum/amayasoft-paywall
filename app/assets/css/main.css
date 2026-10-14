@@ -1,0 +1,72 @@
+/* Токены из design/variables.md (Figma variables, node 3:11) */
+:root {
+  --color-bg: #fff8ee;
+  --color-surface: #ffffff;
+  --color-border: #eadfd2;
+  --color-accent: #e2641a;
+  --color-accent-tint: #ffeddf;
+  --color-on-accent: #ffffff;
+  --color-text-primary: #2b2118;
+  --color-text-secondary: #6b5d50;
+  --color-text-tertiary: #8c7d6f;
+  /* Значения из фреймов (не вынесены в variables) */
+  --color-skeleton: #f1e7db;
+  --color-disabled-text: #a3948a;
+  --color-info-bg: #e9f1fa;
+
+  --radius-card: 20px;
+  --radius-cta: 16px;
+  --radius-banner: 12px;
+  --radius-badge: 8px;
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-screen-x: 20px;
+  --space-safe-top: 44px;
+  --space-safe-bottom: 36px;
+
+  --size-mascot: 112px;
+  --size-cta-h: 56px;
+  --size-touch-min: 44px;
+  --size-border: 1px;
+  --size-border-selected: 2px;
+
+  --font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+h1, h2, p, ul { margin: 0; padding: 0; }
+
+button, input, label { font: inherit; color: inherit; touch-action: manipulation; }
+button { -webkit-appearance: none; appearance: none; border: 0; background: none; padding: 0; cursor: pointer; user-select: none; -webkit-user-select: none; }
+button:disabled { cursor: default; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* Превью состояний (?state=) для pixel-diff: без анимаций */
+[data-preview] *, [data-preview] *::before, [data-preview] *::after { animation: none !important; transition: none !important; }
